@@ -5,7 +5,6 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-
 header {
     background-color: #333;
     color: #fff;
@@ -48,4 +47,56 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.WrapperSection_header {
+    margin: 0 0 50px 0  ;
+  }
+
+.WrapperSection:first-of-type {
+    background-color: #FFFF;
+    margin-bottom: 40px;
+} 
+
+.WrapperSection {
+    min-height: 350px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.WrapperMenu {
+    min-height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.InputWrapper {
+    display: flex;
+    
+    flex-direction: column;
+    margin-bottom: 2rem;
+    > label {
+        margin-bottom: 10px;
+        font-size: 24px;
+    } 
+    > input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
 }
