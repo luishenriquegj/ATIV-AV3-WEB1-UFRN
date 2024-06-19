@@ -10,11 +10,40 @@
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" > 
     </script>
 </head>
-<script>window.addEventListener('DOMContentLoaded',()=> populateStorage())</script>
 <body>
     <header>
         <h1>Juca webMotors</h1>
     </header>
+    <main>
+        <form id="addVehicleForm" class="AddVehicleForm" >
+            <div id="carPhoto" class="InputWrapper">
+                <label for="carPhotoInput">photo</label>
+                <input required type="image" id="carPhotoInput"/>
+            </div>
+            <div id="carModel" class="InputWrapper">
+                <label for="carModelInput">brand</label>
+                <input required type="text" id="carModelInput"/>
+            </div>
+            <div id="carModel" class="InputWrapper">
+                <label for="carModelInput">model</label>
+                <input required type="text" id="carModelInput"/>
+            </div>
+            
+            <div id="carColor" class="InputWrapper">
+                <label for="carColorInput">color</label>
+                <input required type="text" id="carColorInput"  placeholder="white">
+            </div>
+            <div id="carPlate" class="InputWrapper">
+                <label for="carPlateInput">plate</label>
+                <input required type="text" id="carPlateInput" placeholder="AAA1A11">
+            </div>
+            <div class="ButtonWrapper">
+                <button type="submit" class="CustomButton">add vehicle</button>
+                <button type="button" id="cancelAddVehicle" class="CustomButton">Cancel</button>
+            </div>
+        </form>
+    </main>
+    
     <footer>
         <p>&copy; 2024 Juca webMotors. All rights reserved.</p>
     </footer>
