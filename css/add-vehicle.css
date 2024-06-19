@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+main {
+    padding: 10rem 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CustomButton {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 3px;
+    transition: filter 0.3s; /* Smooth transition */
+}
+
+.CustomButton:hover {
+    background-color: rgb(25, 86, 126);
+    border-color:rgb(25, 86, 126);
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
