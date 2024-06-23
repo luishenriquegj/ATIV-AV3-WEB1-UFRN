@@ -15,6 +15,30 @@
     <header>
         <h1>Juca webMotors</h1>
     </header>
+    <main>
+        <form id="removeForm" class="WrapperSection">
+                <div id="carPlate" class="InputWrapper">
+                    <label for="plateInput">Plate</label>
+                    <input required id="carModelInput" maxlength="7"  placeholder="abc1d23"/>
+                </div>
+                <div id="carBrand" class="InputWrapper">
+                    <label for="brandInput">Brand</label>
+                    <input required type="text" id="BrandInput" maxlength="14" placeholder="test"/>
+                </div>
+                <div id="carYear" class="InputWrapper">
+                    <label for="modelInput">Model</label>
+                    <input required type="text" id="modelInput" maxlength="14" placeholder="test"/>
+                </div>
+                <div id="carColor" class="InputWrapper">
+                    <label for="colorInput">Color</label>
+                    <input required type="text" id="colorInput" maxlength="14" placeholder="red"/>
+                </div>
+                <div class="ButtonWrapper">
+                    <button type="submit" class="CustomButton">Remove</button>
+                    <button type="button" class="CustomButton" onclick="window.location.reload()">Clear</button>
+                </div>
+        </form>
+    </main>
     <footer>
         <p>&copy; 2024 Juca webMotors. All rights reserved.</p>
     </footer>
