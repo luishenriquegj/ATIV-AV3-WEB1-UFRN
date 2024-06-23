@@ -12,9 +12,29 @@
 </head>
 <script>window.addEventListener('DOMContentLoaded',()=> populateStorage())</script>
 <body> 
-    <header>
+    <header >
         <h1>Juca webMotors</h1>
     </header>
+    <main>
+        <form id="searchVehicleForm" class="SearchVehicleForm" >
+            <div id="carPlate" class="InputWrapper">
+                <label for="carPlateInput">plate</label>
+                <input required type="text" id="carPlateInput" maxlength="7" placeholder="abc1d23"/>
+            </div>
+            <div id="carBrand" class="InputWrapper">
+                <label for="carBrandInput">brand</label>
+                <input required type="text" id="carBrandInput" maxlength="14" placeholder="Fiat"/>
+            </div>
+            <div id="carModel" class="InputWrapper">
+                <label for="carModelInput">model</label>
+                <input required type="text" id="carModelInput" maxlength="14" placeholder="retch"/>
+            </div>
+            <div class="ButtonWrapper">
+                <button type="submit" class="CustomButton">search vehicle</button>
+                <button type="button" class="CustomButton" onclick="window.location.reload()">Clear</button>
+            </div>
+        </form>
+    </main>
     <footer>
         <p>&copy; 2024 Juca webMotors. All rights reserved.</p>
     </footer>
