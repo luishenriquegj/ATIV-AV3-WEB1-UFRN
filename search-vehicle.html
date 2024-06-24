@@ -10,7 +10,6 @@
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" > 
     </script>
 </head>
-<script>window.addEventListener('DOMContentLoaded',()=> populateStorage())</script>
 <body> 
     <header >
         <h1>Juca webMotors</h1>
@@ -23,17 +22,21 @@
             </div>
             <div id="carBrand" class="InputWrapper">
                 <label for="carBrandInput">brand</label>
-                <input required type="text" id="carBrandInput" maxlength="14" placeholder="Fiat"/>
+                <input required type="text" id="carBrandInput" placeholder="Fiat"/>
             </div>
             <div id="carModel" class="InputWrapper">
                 <label for="carModelInput">model</label>
                 <input required type="text" id="carModelInput" maxlength="14" placeholder="retch"/>
             </div>
             <div class="ButtonWrapper">
-                <button type="submit" class="CustomButton">search vehicle</button>
+                <button type="submit" class="CustomButton" id="searchButton">search vehicle</button>
                 <button type="button" class="CustomButton" onclick="window.location.reload()">Clear</button>
+                <button type="button" id="cancelAddVehicle" class="CustomButton" onclick="window.location.replace('/menu.html')">return to menu</button>
             </div>
         </form>
+        <section>  
+            <ul id="searchResults"/>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Juca webMotors. All rights reserved.</p>
