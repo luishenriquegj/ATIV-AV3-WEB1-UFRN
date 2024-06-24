@@ -18,11 +18,11 @@
         <form id="addVehicleForm" class="AddVehicleForm" >
             <div id="carPhoto" class="InputWrapper">
                 <label for="carPhotoInput">photo</label>
-                <input required type="image" id="carPhotoInput"/>
+                <input required type="image" id="carPhotoInput" placeholder="./assets/imgs/car-no-Image.png"/>
             </div>
             <div id="carModel" class="InputWrapper">
                 <label for="carModelInput">brand</label>
-                <input required type="text" id="carModelInput"/>
+                <input required type="text" id="carBrandInput"/>
             </div>
             <div id="carModel" class="InputWrapper">
                 <label for="carModelInput">model</label>
@@ -39,7 +39,8 @@
             </div>
             <div class="ButtonWrapper">
                 <button type="submit" class="CustomButton">add vehicle</button>
-                <button type="button" id="cancelAddVehicle" class="CustomButton">Cancel</button>
+                <button type="button" id="cancelAddVehicle" class="CustomButton" onclick="window.location.reload()">clear</button>
+                <button type="button" id="cancelAddVehicle" class="CustomButton" onclick="window.location.replace('/menu.html')">return to menu</button>
             </div>
         </form>
     </main>
