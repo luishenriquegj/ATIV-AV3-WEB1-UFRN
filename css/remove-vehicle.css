@@ -53,12 +53,12 @@ footer {
     margin: 0 0 50px 0  ;
   }
 
-.WrapperSection:first-of-type {
+.RemoveCarSection:first-of-type {
     background-color: #FFFF;
     margin-bottom: 40px;
 } 
 
-.WrapperSection {
+.RemoveCarSection {
     min-height: 350px;
     width: 250px;
     display: flex;
@@ -72,18 +72,6 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.WrapperMenu {
-    min-height: 350px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 20px;
-    border-radius: 5px;
-    background-color: #e4e4e4;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
 
 .InputWrapper {
     display: flex;

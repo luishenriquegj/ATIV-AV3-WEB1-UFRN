@@ -1,16 +1,21 @@
-$(document).ready(function() {
-    $('#searchButton').on('submit', function searchVehicle() {
-        let searchTerm = $('#searchInput').val().toLowerCase();
+$(document).ready(
+    function() {
+    $('#searchVehicleForm').on('submit', function(e) {
+        e.preventDefault();
+        let carPlate = $('#carPlateInput').val().toLowerCase();
+        let carModel = $('#carModelInput').val().toLowerCase();
+        let carBrand = $('#carBrandInput').val().toLowerCase();
+
         let vehicles = JSON.parse(localStorage.getItem('vehicles')) || [];
+        
         let searchResults = $('#searchResults');
         searchResults.empty();
 
         let foundVehicles = vehicles.filter(vehicle => 
-            vehicle.plate.toLowerCase().includes(searchTerm) ||
-            vehicle.model.toLowerCase().includes(searchTerm) ||
-            vehicle.brand.toLowerCase().includes(searchTerm)
+            vehicle.plate.toLowerCase().includes(carPlate) ||
+            vehicle.model.toLowerCase().includes(carModel) ||
+            vehicle.brand.toLowerCase().includes(carBrand)
         );
-        console.log(foundVehicles,vehicles);
 
         if (foundVehicles.length === 0) {
             searchResults.append('<li>No matching vehicles found.</li>');
@@ -26,6 +31,6 @@ $(document).ready(function() {
                 );
             });
         }
+    });     
     }
-);     
-});
+);
