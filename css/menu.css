@@ -48,9 +48,11 @@ main {
     border-radius: 5px;
     background-color: #FFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
     &:hover {
         background-color: #ffffff75;
     }
+
     >.MenuCard_item-title {
         display: block;
         font-size: 1.5em;
@@ -61,6 +63,7 @@ main {
         object-fit: contain;
 
     }
+
     > h3 {
         color: rgb(112, 112, 252);
     }
