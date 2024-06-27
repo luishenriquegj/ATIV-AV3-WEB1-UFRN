@@ -17,7 +17,7 @@ $(document).ready(
         localStorage.removeItem("vehicles");
         
         localStorage.setItem("vehicles",JSON.stringify(vehicles));
-            alert("deletou");
+            alert("deleted");
         
     });     
     }

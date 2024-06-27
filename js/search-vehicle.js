@@ -29,7 +29,7 @@ $(document).ready(
             foundVehicles.forEach(vehicle => {
                 carList.innerHTML +=
                     `<li>
-                        <img src="../assets/imgs/car-no-Image.png" />
+                        <img src="./assets/imgs/car-no-Image.png" />
                         <div class="infoWrapper">
                             <p>Brand: ${vehicle.brand}</p>
                             <p>Model: ${vehicle.model}</p>
