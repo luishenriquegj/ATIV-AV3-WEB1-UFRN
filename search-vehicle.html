@@ -18,15 +18,15 @@
         <form id="searchVehicleForm" class="SearchVehicleForm" >
             <div id="carPlate" class="InputWrapper">
                 <label for="carPlateInput">plate</label>
-                <input required type="text" id="carPlateInput" maxlength="7" placeholder="abc1d23"/>
+                <input  type="text" id="carPlateInput" maxlength="7" placeholder="abc1d23"/>
             </div>
             <div id="carBrand" class="InputWrapper">
                 <label for="carBrandInput">brand</label>
-                <input required type="text" id="carBrandInput" placeholder="Fiat"/>
+                <input  type="text" id="carBrandInput" placeholder="Fiat"/>
             </div>
             <div id="carModel" class="InputWrapper">
                 <label for="carModelInput">model</label>
-                <input required type="text" id="carModelInput" maxlength="14" placeholder="retch"/>
+                <input  type="text" id="carModelInput" maxlength="14" placeholder="retch"/>
             </div>
             <div class="ButtonWrapper">
                 <button type="submit" class="CustomButton" id="searchInput">search vehicle</button>
@@ -34,9 +34,7 @@
                 <button type="button" id="cancelAddVehicle" class="CustomButton" onclick="window.location.replace('/menu.html')">return to menu</button>
             </div>
         </form>
-        <section>  
-            <ul id="searchResults"/>
-        </section>
+        <section class="resultWrapper" id="searchResults"/>
     </main>
     <footer>
         <p>&copy; 2024 Juca webMotors. All rights reserved.</p>

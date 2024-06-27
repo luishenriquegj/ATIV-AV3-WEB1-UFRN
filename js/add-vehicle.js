@@ -17,6 +17,7 @@ $(document).ready(function() {
         }else{
             vehicles.push(addedVehicle);
             localStorage.setItem('vehicles', JSON.stringify(vehicles));
+            alert("vehicle added with success!")
         }        
     });
     

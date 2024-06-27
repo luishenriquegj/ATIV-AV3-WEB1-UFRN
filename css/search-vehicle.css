@@ -65,6 +65,51 @@ footer {
     border-radius: 5px;
     background-color: #e4e4e4;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.resultWrapper{
+    > .carList{ 
+        padding:0;        
+        margin: auto;
+        justify-content:space-around;
+        max-width:800px;
+
+        > li{
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content:center;
+            margin:40px 0;
+            padding:20px;
+            min-height: 130px;
+            border-radius:4px;
+            background-color: white;
+            box-shadow:0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+            > .infoWrapper{
+            
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items:center;
+                justify-content:center;
+                
+                > p{
+                    margin-left:20px;
+
+                }
+            }
+            >img{
+                max-width: 600px;
+                height: auto;
+
+            }
+        }
+
+    }
 }
 
 .InputWrapper {
