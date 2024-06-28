@@ -23,13 +23,14 @@ main {
 }
 
 .CustomButton {
-    width: 100px;
-    padding: 10px;
+    min-width: 100px;
+    height: 52px;
     color: white;
     background-color: #3498db;
     border: 1px solid #3498db;
     border-radius: 3px;
     transition: filter 0.3s; /* Smooth transition */
+    
 }
 
 .CustomButton:hover {
@@ -54,13 +55,13 @@ footer {
 } 
 
 .SearchVehicleForm {
-    min-height: 350px;
-    width: 250px;
+    min-height: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 30px 20px;
     border-radius: 5px;
     background-color: #e4e4e4;

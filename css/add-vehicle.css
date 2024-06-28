@@ -23,8 +23,8 @@ main {
 }
 
 .AddVehicleForm {
-    min-height: 600px;
-    width: 600px;
+    min-height: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -36,8 +36,29 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.AddVehicleForm:first-of-type {
+    background-color: #FFFF;
+    margin-bottom: 40px;
+}
+
+.InputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    > label {
+        margin-bottom: 10px;
+        font-size: 24px;
+    } 
+    > input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+}
+
 .CustomButton {
-    width: 100px;
+    min-width: 100px;
+    height: 52px;
     padding: 10px;
     color: white;
     background-color: #3498db;
